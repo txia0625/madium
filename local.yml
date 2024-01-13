@@ -46,7 +46,7 @@ services:
         image: redis:7-alpine
         networks:
             - authors-api
-    
+
     celery_worker:
         build:
             context: .
@@ -63,6 +63,7 @@ services:
             - mailhog
         networks:
             - authors-api
+
     flower:
         build:
             context: .
@@ -81,8 +82,6 @@ services:
         networks:
             - authors-api
 
-
-
     nginx:
         restart: always
         depends_on:
@@ -97,8 +96,6 @@ services:
             - "8080:80"
         networks:
             - authors-api
-        
-        
 
 networks:
     authors-api:
