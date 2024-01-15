@@ -10,6 +10,10 @@ Use Django Framework to implement a Medium like news website.
 - 1/11/2024 Add custom user model, setup redoc api.
 - 1/11/2024 Setup Nginx, serve staticfiles.
 - 1/12/2024 Configure Redis, Celery and flower.
+- 1/12/2024 add timestamped, profile
+- 1/13/2024 add JWT authentication and some auth routes
+- 1/15/2024 feat: add profile, follow and unfollow views
+
 
 ## Tools
 
