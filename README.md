@@ -12,7 +12,8 @@ Use Django Framework to implement a Medium like news website.
 - 1/12/2024 Configure Redis, Celery and flower.
 - 1/12/2024 add timestamped, profile
 - 1/13/2024 add JWT authentication and some auth routes
-- 1/15/2024 feat: add profile, follow and unfollow views
+- 1/15/2024 add profile, follow and unfollow views
+- 1/15/2024 add article CRUD
 
 
 ## Tools
