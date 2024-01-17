@@ -14,6 +14,11 @@ Use Django Framework to implement a Medium like news website.
 - 1/13/2024 add JWT authentication and some auth routes
 - 1/15/2024 add profile, follow and unfollow views
 - 1/15/2024 add article CRUD
+- 1/16/2024 add article rating
+- 1/16/2024 add and remove article bookmarks
+- 1/16/2024 user can upvote and cancel upvote on an article
+- 1/16/2024 user can add,update and delete responses
+- 1/17/2024 add elastic search for Article model
 
 
 ## Tools
@@ -36,3 +41,6 @@ Use Django Framework to implement a Medium like news website.
 
 ### API Documentation
 - Redoc
+
+### Testing
+- PyTest
