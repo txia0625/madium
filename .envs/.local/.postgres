@@ -3,3 +3,5 @@ POSTGRES_PORT=5432
 POSTGRES_DB=authors-live
 POSTGRES_USER=txia0625
 POSTGRES_PASSWORD=1q2w3er
+DATABASE_URL=postgres://txia0625:1q2w3er@postgres:5432/authors-live
+

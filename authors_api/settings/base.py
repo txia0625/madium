@@ -51,10 +51,12 @@ THIRD_PARTY_APPS = ["rest_framework",
                     "dj_rest_auth",
                     "dj_rest_auth.registration",
                     "taggit",
+                    "django_elasticsearch_dsl",
+                    "django_elasticsearch_dsl_drf",
 
                     ]
 
-LOCAL_APPS = ["core_apps.responses","core_apps.profiles", "core_apps.users", "core_apps.common","core_apps.articles", "core_apps.ratings", "core_apps.bookmarks"]
+LOCAL_APPS = [ "core_apps.search","core_apps.responses","core_apps.profiles", "core_apps.users", "core_apps.common","core_apps.articles", "core_apps.ratings", "core_apps.bookmarks"]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
@@ -218,6 +220,13 @@ ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 ACCOUNT_USERNAME_REQUIRED = False
+
+
+ELASTICSEARCH_DSL = {
+    "default": {
+        "hosts": "es:9200",
+    },
+}
 
 LOGGING = {
     "version": 1,
